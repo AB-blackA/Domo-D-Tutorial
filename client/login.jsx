@@ -3,7 +3,7 @@ const React = require('react');
 const { createRoot } = require('react-dom/client');
 
 const handleLogin = (e) => {
-    e.preventDeafult();
+    e.preventDefault();
     helper.hideError();
 
     const username = e.target.querySelector('#user').value;
@@ -22,7 +22,7 @@ const handleLogin = (e) => {
 }
 
 const handleSignup = (e) => {
-    e.preventDeafult();
+    e.preventDefault();
     helper.hideError();
 
     const username = e.target.querySelector('#user').value;
